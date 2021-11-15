@@ -2,15 +2,15 @@
 
 var a = +prompt("Введите a");
 var b = +prompt("Введите b");
-var c = +prompt("Введите 3");
+var c = +prompt("Введите c");
 var m;
         
 if (a > b) {
      m = a;
 } else if (b > c) {
      m = b;
-}else {
-    m = c;
- }
+} else if (c > a) {
+     m = c;
+}
 
 console.log(m);
