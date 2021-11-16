@@ -5,11 +5,11 @@ var b = +prompt("Введите b");
 var c = +prompt("Введите c");
 var m;
         
-if (a > b) {
+if (a > b && a > c) {
      m = a;
-} else if (b > c) {
+} else if (b > a && b > c) {
      m = b;
-} else if (c > a) {
+} else if (c > a && c > b) {
      m = c;
 }
 
