@@ -13,44 +13,29 @@ var myArray = prompt("Введите название элемента масс�
 
 
 
-var pos = cars.indexOf(myArray)
+var counter = 0
 
 
 
 
-for (let i = 0; i < cars.length; i++) {
+for (var i = 0; i < cars.length; i++) {
     if (cars[i] === myArray) {
-        var Arr = prompt("Введите название нового элемента массива? ");
-        cars.splice(pos + 1, 0, Arr);
-        console.log(cars);
         
-        break;
-        
-    
-    } else if (cars[i] != myArray) {
-        cars.push(myArray);
-
-        console.log(cars);
-        break;
-        
-        
-    } else {}
-    
-
+        counter++;
+    }
 }
-
-
-
-
-// function contains(cars, myArray) {
-//     for (var i = 0; i < cars.length; i++) {
-//         if (cars[i] === myArray) {
-//              cars.splice(pos, 0, "сложный", "язык");
         
-//             return true;
-//             console.log(cars);
-//         }
-//     }
-//     return false;
+if (counter > 0) {
+    var carindex = cars.indexOf(myArray);
+    var Arr = prompt("Введите название нового элемента массива? ");
+    cars.splice(carindex + 1, 0, Arr);
+
+} else {
+    cars.push(myArray);
+}
+console.log(cars);
     
-// }
+
+
+
+
