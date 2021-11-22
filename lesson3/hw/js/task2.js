@@ -7,4 +7,50 @@
 //         п.4 Если в массиве есть одинаковые элементы (из. п.2), программа должна добавлять только после первого найденного элемента
 //         п.5 Запросите у пользователя новый элемент для массива только в случае если предыдущий элемент был найден и вставьте его после найденного элемента.
 
-//     3. Создать многомерный массив, размер массива получить от пользователя. Каждый нечётный элемент массива заполнить подмассивом со значением 'odd', а чётный - 'even'. 
+
+var cars = ["Mitsubishi", "Honda", "Toyota", "Suzuki", "Audi", "BMW", "Honda", "Mercedes"];
+var myArray = prompt("Введите название элемента массива? ");
+
+
+
+var pos = cars.indexOf(myArray)
+
+
+
+
+for (let i = 0; i < cars.length; i++) {
+    if (cars[i] === myArray) {
+        var Arr = prompt("Введите название нового элемента массива? ");
+        cars.splice(pos + 1, 0, Arr);
+        console.log(cars);
+        
+        break;
+        
+    
+    } else if (cars[i] != myArray) {
+        cars.push(myArray);
+
+        console.log(cars);
+        break;
+        
+        
+    } else {}
+    
+
+}
+
+
+
+
+// function contains(cars, myArray) {
+//     for (var i = 0; i < cars.length; i++) {
+//         if (cars[i] === myArray) {
+//              cars.splice(pos, 0, "сложный", "язык");
+        
+//             return true;
+//             console.log(cars);
+//         }
+//     }
+//     return false;
+    
+// }
