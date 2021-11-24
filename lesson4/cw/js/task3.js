@@ -4,3 +4,20 @@
 //         "something"
 
 // 		"test" => "tset"
+
+function reverseString(str) {
+    //превратить str в мaссив
+    //вызвать на полученом мвссиве метод reverse
+    //перевернутый массив превратить в строку
+    //вернуть перевернутую строку
+
+    var arr = str.split("");
+    console.log(arr);
+    var reverseArr = arr.reverse();
+    console.log(reverseArr);
+    var reversString = reverseArr.join("")
+    console.log(reversString)
+    
+    return reversString;
+}
+reverseString("abcde");
